@@ -7,14 +7,12 @@
 
     <link rel="icon" href="img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="/fontes/interstate.ttf">
-    
 
 </head>
 <body>
     
     <header>
-        <nav>
+        <nav>   
             <ul>
                 <li>SOBRE</li>
                 <li>SERVIÇOS</li>
@@ -28,26 +26,37 @@
     <div class="flex-container">
         <main>
             <div class="logo">
-                <img src="img/logo_grande.png" alt="Logo da Psicóloga Isadora Lisboa e CRP 12/9868">
+                <img src="img/logo_completo.png" alt="Logo da Psicóloga Isadora Lisboa e CRP 12/9868">
             </div>
 
-            <div class="sobre">
-                <h1>Sobre</h1>
+            <div class="sobre section">
+                <h1 class="section-title">Sobre</h1>
                 <img src="img/sobre" alt="">
-                <p class="text">
-                    Possui graduação em Psicologia pela Universidade Católica de Pelotas (2020). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor ante vel sagittis luctus. Pellentesque in mi a augue volutpat semper posuere a elit. Morbi mattis pretium fermentum. Sed venenatis eu ante et rutrum. Nunc lobortis ultrices elit, at dapibus ipsum dictum sit amet. Fusce tristique nibh nulla, eget malesuada arcu luctus ac. Duis ornare blandit nibh nec aliquam. Vivamus dapibus rhoncus magna nec iaculis. Quisque at iaculis justo.
-                </p>
+                <p class="text">Possui graduação em Psicologia pela Universidade Católica de Pelotas (2020). urabitur mollis mauris ut metus pharetra, vitae blandit purus fringilla. Aenean ultrices interdum nisi eu condimentum. Aenean nec lacinia nisi. Integer laoreet, lectus at mollis sagittis, libero nisl facilisis tellus, molestie tincidunt diam dui vehicula augue. Etiam ut enim non ligula condimentum lacinia a sit amet sapien. Nullam ligula dui, elementum id vulputate id, venenatis eu neque.</p>
+                <img src="/img/sobre_exemplo.jpg" alt="Exemplo imagem sobre">
+
             </div>
 
-            <div class="servicos">
-                <h1>Serviços</h1>
+            <div class="servicos section">
+                <h1 class="section-title">Serviços</h1>
                 <img src="img/servicos" alt="">
                 <p class="text">
-                    Morbi pellentesque orci a elit vehicula iaculis. Vivamus molestie imperdiet ex, quis semper felis molestie eu. Etiam interdum eu urna ut scelerisque. Fusce fermentum diam massa, sit amet pretium urna suscipit sed. Curabitur mollis mauris ut metus pharetra, vitae blandit purus fringilla. Aenean ultrices interdum nisi eu condimentum. Aenean nec lacinia nisi. Integer laoreet, lectus at mollis sagittis, libero nisl facilisis tellus, molestie tincidunt diam dui vehicula augue. Etiam ut enim non ligula condimentum lacinia a sit amet sapien. Nullam ligula dui, elementum id vulputate id, venenatis eu neque.
-                </p>
+                    Morbi pellentesque orci a elit vehicula iaculis. Vivamus molestie imperdiet ex, quis semper felis molestie eu. Etiam interdum eu urna ut scelerisque. Fusce fermentum diam massa, sit amet pretium urna suscipit sed. Curabitur mollis mauris ut metus pharetra, vitae blandit purus fringilla. Aenean ultrices interdum nisi eu condimentum. Aenean nec lacinia nisi. Integer laoreet, lectus at mollis sagittis, libero nisl facilisis tellus, molestie tincidunt diam dui vehicula augue. Etiam ut enim non ligula condimentum lacinia a sit amet sapien. Nullam ligula dui, elementum id vulputate id, venenatis eu neque.</p>
+                <img src="/img/servicos_exemplo.jpg" alt="Exemplo imagem serviços">
             </div>
 
-            <div class="contato">
+            <div class="contato section">
+                <h1 class="section-title">Contato</h1>
+                <form action="destino.html" method="post">
+                    
+                    <input type="text" name="nome" id="nome" size="30" maxlength="100" required autofocus placeholder="Digite seu nome aqui">
+                    <input type="tel" name="telefone" id="telefone" size="10" maxlength="15" required autofocus placeholder="Telefone">
+                    <input type="email" name="email" id="email" size="30" maxlength="100" required autofocus placeholder="Email">
+                    <input type="date" name="aniversario" id="aniversario">
+                    <input type="text" name="mensagem" id="mensagem" size="30" maxlength="1000" required autofocus placeholder="Mensagem">
+                    <input type="button" value="Enviar" name="enviar" id="enviar">
+                    
+                </form>
                 
             </div>
         </main>
@@ -56,10 +65,10 @@
     <footer>
         <div class="social">
             <ul>
-                <li><img src="/icones/face.png" alt="Icone Facebook"></li>
-                <li><img src="/icones/insta.jpg"></li>
+                <li><img src="/icones/facebook.png" alt="Icone Facebook"></li>
+                <li><img src="/icones/instagram.png"></li>
                 <li><img src="icones/twitter.png"></li>
-                <li><img src="icones/whats.png"></li>
+                <li><img src="icones/whatsapp.png"></li>
             </ul>
         </div>
 

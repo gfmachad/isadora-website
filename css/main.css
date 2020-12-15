@@ -3,9 +3,11 @@
     src: URL('/fontes/interstate.ttf') format('truetype');
 }
 
-* {
-   /* border: 1px solid gray;   */
+@font-face {
+    font-family: "pearoxygirl";
+    src: URL('/fontes/pearoxygirl.ttf') format('truetype');
 }
+
 
 html, body {
     margin: 0; 
@@ -29,15 +31,19 @@ main .avatar img {
 }
 
 main .logo img {
-    width: 400px;
+    width: 800px;
+    height: 300px;    
+    
 }
 
 header {
     background-color: #F49C34;
     color: white;
 
-    font-family: "interstate";
-        
+    font-family: "interstate";  
+    font-size: 24px;
+    font-weight: bold;
+
     min-width: 100vw;
     height: 70px;
     
@@ -52,7 +58,6 @@ header nav {
 nav ul {
     margin: 0;
     padding: 0;
-    font-size: 20px;
     
     min-width: 100%;
     
@@ -67,13 +72,92 @@ nav ul li {
     align-self: center
 }
 
+.flex-container {
+    justify-content: center;
+
+}
+main .logo {    /* removi o img, as proprieddades flex normalmente são aplicadas no container */
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: flex;      /* fazer se comportar e aceitar as propriedades flex */
+    justify-content: center;    /* centralizar */
+
+}
+
+main .logo img {
+    height: 100%;
+}
+
+.section {
+    overflow: auto;
+}
+
+.section p {
+    font-family:'interstate';
+    font-size: 25px;
+    color: #54605A;
+    text-align: justify;
+}
+
+.section-title {
+    margin-top: 40px;
+    font-family: 'pearoxygirl';
+    font-size: 40px;
+    color: #54605A;
+    margin-bottom: 0;
+}
+
+.sobre .text {
+    background-color: white;
+    width: 66%;
+    float: left;
+}
+
+.sobre img {
+    float: right;
+    width: 32%;    
+}
+
+.servicos {
+    clear: both;
+}
+
+
+.servicos .text {
+    background-color: white;
+    width: 66%;
+    float: right;
+}
+.servicos img {
+    float: left;
+    width: 32%;   
+}
+
+.contato {
+    clear: both;
+}
+
+input {
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid #F49C34;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.contato form {
+
+}
+
+
 
 footer {
-    background-color: #F49C34;
+    background-color: #54605A;
     color: white;
 
     font-family: "interstate";
-       
+    font-size: 18px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,5 +176,5 @@ footer ul {
 footer li img {
     width: 50px;
     height: 50px;
-
+    margin: 10px;
 }
