@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'interstate';
-    src: URL('/fontes/interstate.ttf') format('truetype');
+    src: URL('../fontes/interstate.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "pearoxygirl";
-    src: URL('/fontes/pearoxygirl.ttf') format('truetype');
+    font-family: 'pearoxygirl';
+    src: URL('../fontes/pearoxygirl.ttf') format('truetype');
 }
 
 
@@ -32,16 +32,15 @@ main .avatar img {
 
 main .logo img {
     width: 800px;
-    height: 300px;    
-    
+    height: 300px;        
 }
 
 header {
     background-color: #F49C34;
     color: white;
 
-    font-family: "interstate";  
-    font-size: 24px;
+    font-family: 'interstate';  
+    font-size: 30px;
     font-weight: bold;
 
     min-width: 100vw;
@@ -49,6 +48,11 @@ header {
     
     display: flex;
     align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
 }
 
 header nav {
@@ -76,12 +80,11 @@ nav ul li {
     justify-content: center;
 
 }
-main .logo {    /* removi o img, as proprieddades flex normalmente são aplicadas no container */
+main .logo {    
     margin-bottom: 10px;
     margin-top: 30px;
-    display: flex;      /* fazer se comportar e aceitar as propriedades flex */
-    justify-content: center;    /* centralizar */
-
+    display: flex;      
+    justify-content: center;    
 }
 
 main .logo img {
@@ -93,7 +96,7 @@ main .logo img {
 }
 
 .section p {
-    font-family:'interstate';
+    font-family: 'interstate';
     font-size: 25px;
     color: #54605A;
     text-align: justify;
@@ -122,7 +125,6 @@ main .logo img {
     clear: both;
 }
 
-
 .servicos .text {
     background-color: white;
     width: 66%;
@@ -145,22 +147,21 @@ input {
     border-radius: 5px;
 }
 
-.contato form {
-
-}
-
-
-
 footer {
     background-color: #54605A;
-    color: white;
+    color: gray;
 
-    font-family: "interstate";
+    font-family: 'interstate';
     font-size: 18px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
 }
 
 footer ul {
